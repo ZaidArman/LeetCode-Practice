@@ -79,6 +79,7 @@ git clone https://github.com/ZaidArman/leetcode-practice.git
 
 - Zaid Ullah
 - GitHub: Zaid Arman (https://github.com/ZaidArman)
+- LinkedIn: Zaid Ullah (https://www.linkedin.com)
 
 ## License
 
