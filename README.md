@@ -22,28 +22,34 @@ The repository is structured as follows:
 │ ├── Linked List
 │ ├── Tree
 │ └── ...
+
 ├── Algorithms
 │ ├── Sorting
 │ ├── Searching
 │ ├── Dynamic Programming
 │ └── ...
+
 ├── String Manipulation
 │ ├── Valid Parentheses
 │ ├── Longest Substring Without Repeating Characters
 │ └── ...
+
 ├── Math
 │ ├── Integer to Roman
 │ ├── Roman to Integer
 │ └── ...
+
 ├── Database (SQL)
 │ ├── Sort the People
 │ ├── Find Duplicates Values
 │ └── ...
+
 ├── Interview Practice
 │ ├── Two Sum
 │ ├── Add Two Numbers
 │ ├── Majority Element
 │ └── ...
+
 └── ...
 
 
