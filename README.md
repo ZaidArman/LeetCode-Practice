@@ -62,7 +62,7 @@ git clone https://github.com/ZaidArman/leetcode-practice.git
 
 2. Navigate to the problem category and specific problem directory you are interested in.
 
-3. Open the solution file (usually named `solution.py` or `solution.sql`) to view the code.
+3. Open the solution file (usually named `filename.py` or `solution.sql`) to view the code.
 
 4. Read the problem statement and explanation in the `README.md` file within each problem directory.
 
