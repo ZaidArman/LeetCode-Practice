@@ -10,7 +10,7 @@ The repository is organized into different categories, making it easier to navig
 - **Algorithms**: Solutions involving sorting, searching, dynamic programming, and more.
 - **String Manipulation**: Problems related to string operations and manipulations.
 - **Math**: Math-related problems and puzzles.
-- **Database (SQL)**: SQL query solutions for database-related problems.
+- **Database (SQL)**: SQL query solutions for database-related problems. (We will practice and solve in Future (Soon) Inshallah.
 - **Interview Practice**: Problems commonly asked in technical interviews.
 
 ## Directory Structure
