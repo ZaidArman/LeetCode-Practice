@@ -21,18 +21,18 @@ The repository is structured as follows:
 │ ├── Array
 │ ├── Linked List
 │ ├── Tree
-│ └── ...
+│ └── ....
 
 ├── Algorithms
 │ ├── Sorting
 │ ├── Searching
 │ ├── Dynamic Programming
-│ └── ...
+│ └── ....
 
 ├── String Manipulation
 │ ├── Valid Parentheses
 │ ├── Longest Substring Without Repeating Characters
-│ └── ...
+│ └── ....
 
 ├── Math
 │ ├── Integer to Roman
