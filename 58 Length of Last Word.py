@@ -25,7 +25,8 @@ There will be at least one word in s.
 
 class Solution(object):
     def lengthOfLastWord(self, s):
-
+        # Solution-I (Shortcut)
+        return len(s.split()[-1])
 
         # Solution-II
         Last_Word = 0
