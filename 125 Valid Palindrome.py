@@ -25,23 +25,23 @@ s consists only of printable ASCII characters.
 
 class Solution(object):
     def isPalindrome(self, s):
-        # Solution I
-        # Remove non-alphanumeric characters, convert to lowercase, and check for palindrome
+        # Solution I:
+        # Remove non-alphanumeric characters, convert to lowercase, and check for palindrome.
         s = ''.join(c for c in s.lower() if c.isalnum())
         return s == s[::-1]
 
-    # Solution II
+    # Solution II:
     # Use two pointers to check for palindrome
     left, right = 0, len(s) - 1
     while left < right:
-        # Move the left pointer to the right while skipping non-alphanumeric characters
+        # Move the left pointer to the right while skipping non-alphanumeric characters.
         while left < right and not s[left].isalnum():
             left += 1
-        # Move the right pointer to the left while skipping non-alphanumeric characters
+        # Move the right pointer to the left while skipping non-alphanumeric characters.
         while left < right and not s[right].isalnum():
             right -= 1
 
-        # Compare characters (case insensitive) at the left and right positions
+        # Compare characters (case insensitive) at the left and right positions.
         if s[left].lower() != s[right].lower():
             return False
 
@@ -51,3 +51,5 @@ class Solution(object):
 
     # If no mismatch is found, it's a palindrome
     return True
+
+
