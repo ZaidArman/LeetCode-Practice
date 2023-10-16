@@ -2,8 +2,6 @@
 """
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers. Given a string s, return true if it is a palindrome, or false otherwise.
 
- 
-
 # Example 1:
 Input: s = "A man, a plan, a canal: Panama"
 Output: true
@@ -25,3 +23,31 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 s consists only of printable ASCII characters.
 """ 
 
+class Solution(object):
+    def isPalindrome(self, s):
+        # Solution I
+        # Remove non-alphanumeric characters, convert to lowercase, and check for palindrome
+        s = ''.join(c for c in s.lower() if c.isalnum())
+        return s == s[::-1]
+
+    # Solution II
+    # Use two pointers to check for palindrome
+    left, right = 0, len(s) - 1
+    while left < right:
+        # Move the left pointer to the right while skipping non-alphanumeric characters
+        while left < right and not s[left].isalnum():
+            left += 1
+        # Move the right pointer to the left while skipping non-alphanumeric characters
+        while left < right and not s[right].isalnum():
+            right -= 1
+
+        # Compare characters (case insensitive) at the left and right positions
+        if s[left].lower() != s[right].lower():
+            return False
+
+        # Move both pointers closer to the center
+        left += 1
+        right -= 1
+
+    # If no mismatch is found, it's a palindrome
+    return True
