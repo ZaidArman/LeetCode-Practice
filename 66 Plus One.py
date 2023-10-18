@@ -30,7 +30,6 @@ digits does not contain any leading 0's.
 """
 
 #Solution:
-
 class Solution(object):
     def plusOne(self, digits):
         """
