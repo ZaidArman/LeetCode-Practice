@@ -13,6 +13,7 @@ Output: "10101"
 a and b consist only of '0' or '1' characters.
 Each string does not contain leading zeros except for the zero itself.
 """
+
 class Solution(object):
     def addBinary(self, a, b):
         # Approach I: Convert binary strings to integers, add them, and convert back to binary
