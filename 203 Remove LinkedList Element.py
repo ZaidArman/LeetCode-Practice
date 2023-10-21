@@ -21,7 +21,8 @@ The number of nodes in the list is in the range [0, 104].
 0 <= val <= 50
 """
 
-# Solution 1: Create a New List
+
+# Solution 1: Recursive Approach
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, val=0, next=None):
@@ -29,20 +30,14 @@ The number of nodes in the list is in the range [0, 104].
 #         self.next = next
 class Solution(object):
     def removeElements(self, head, val):
-        # Create a new head and tail for the resulting list
-        new_head = ListNode(0)
-        new_tail = new_head
-        current = head
+        # Base case: If the head is None, return None (end of the list)
+        if not head:
+            return head
+        # Recursively check the next nodes
+        head.next = self.removeElements(head.next, val)
+        # If the current node's value matches 'val', return the next node
+        return head if head.val != val else head.next
 
-        while current:
-            # If the current node's value does not match 'val', add it to the new list
-            if current.val != val:
-                new_tail.next = ListNode(current.val)
-                new_tail = new_tail.next
-            current = current.next
-
-        return new_head.next
-    
 
 # Solution 2: Two-Pointer Approach
 class Solution(object):
@@ -63,13 +58,20 @@ class Solution(object):
         return dummy.next
     
 
-# Solution 3: Recursive Approach
+# Solution 3: Create a New List
 class Solution(object):
     def removeElements(self, head, val):
-        # Base case: If the head is None, return None (end of the list)
-        if not head:
-            return head
-        # Recursively check the next nodes
-        head.next = self.removeElements(head.next, val)
-        # If the current node's value matches 'val', return the next node
-        return head if head.val != val else head.next
+        # Create a new head and tail for the resulting list
+        new_head = ListNode(0)
+        new_tail = new_head
+        current = head
+
+        while current:
+            # If the current node's value does not match 'val', add it to the new list
+            if current.val != val:
+                new_tail.next = ListNode(current.val)
+                new_tail = new_tail.next
+            current = current.next
+
+        return new_head.next
+    
