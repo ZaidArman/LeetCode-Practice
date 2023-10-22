@@ -23,6 +23,7 @@ Output: false
 
 # Follow up: Could you solve it without loops/recursion?
 """
+
 class Solution(object):
     def isPowerOfTwo(self, n):
         """
@@ -37,12 +38,10 @@ class Solution(object):
         return n == 1
 
         # Follow up: Could you solve it without loops/recursion?
-            
+
         # Solution 2: Using Bit Manipulation
         if n <= 0:
             return False
         return n & (n - 1) == 0
                 # OR    
-        return n > 0 and n & (n - 1) == 0
-
-       
+        return n > 0 and n & (n - 1) == 0       
