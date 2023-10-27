@@ -14,7 +14,6 @@ The repository is organized into different categories, making it easier to navig
 - **Interview Practice**: Problems commonly asked in technical interviews.
 
 ## Directory Structure
-
 The repository is structured as follows:
 
 ├── Data Structures
