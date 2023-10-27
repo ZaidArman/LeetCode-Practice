@@ -1,6 +1,6 @@
 # LeetCode (Problem Solution) Practice Repository
 
-This repository contains my solutions to various LeetCode problems. It's a collection of my coding journey as I tackle algorithmic challenges and improve my problem-solving skills.
+This repository contains my solutions to various LeetCode problems. It's a collection of my coding journey as I tackle algorithmic challenges and improve my problem solving skills.
 
 ## Problem Categories
 
@@ -14,7 +14,6 @@ The repository is organized into different categories, making it easier to navig
 - **Interview Practice**: Problems commonly asked in technical interviews.
 
 ## Directory Structure
-
 The repository is structured as follows:
 
 ├── Data Structures
