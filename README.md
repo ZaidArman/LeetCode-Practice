@@ -3,7 +3,6 @@
 This repository contains my solutions to various LeetCode problems. It's a collection of my coding journey as I tackle algorithmic challenges and improve my problem solving skills.
 
 ## Problem Categories
-
 The repository is organized into different categories, making it easier to navigate and find solutions to specific types of problems:
 
 - **Data Structures**: Solutions related to arrays, linked lists, trees, and more.
